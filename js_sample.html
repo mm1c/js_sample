@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>
+js sample
+</title>
+</head>
+<body>
+
+<div id="my_div">This is my div!</div>
+
+
+<script>
+
+
+	/*
+	for(i=0; i<10; i++) {
+		var myDiv = document.createElement('div');
+		myDiv.className = 'div-' + i;
+		myDiv.innerHTML = 'div-' + i;
+		document.getElementsByTagName('body')[0].appendChild(myDiv);
+	}
+	*/
+	
+	var d = document.getElementById("my_div");
+	d.innerHTML = "LÓÓÓÓÓFASZT!";
+
+	var temp = d.cloneNode(true);
+	temp.id = "my_cloned_div";
+	temp.innerHTML = "another lóóóófasz";
+	document.getElementsByTagName('body')[0].appendChild(temp);
+	
+	</script>
+</body>
+</html>
